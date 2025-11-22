@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Delizia — Restaurant</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#">Delizia</a>
+      <nav class="nav" id="nav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="hero-overlay">
+        <div class="container hero-content">
+          <h1>Delizia — Taste the Difference</h1>
+          <p>Handcrafted dishes, fresh ingredients, unforgettable taste.</p>
+          <a href="#menu" class="btn">View Menu</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- MENU -->
+    <section id="menu" class="section">
+      <div class="container">
+        <h2 class="section-title">Our Menu</h2>
+        <div class="menu-filters">
+          <button class="filter active" data-filter="all">All</button>
+          <button class="filter" data-filter="starter">Starters</button>
+          <button class="filter" data-filter="main">Main</button>
+          <button class="filter" data-filter="dessert">Desserts</button>
+        </div>
+
+        <div class="menu-grid" id="menu-grid">
+          <!-- menu items -->
+          <article class="menu-item" data-category="starter">
+            <img src="dish1.jpg" width = 300>
+            <div class="menu-body">
+              <h3>Bruschetta</h3>
+              <p>Tomato, basil, garlic on toasted bread.</p>
+              <span class="price">₹180</span>
+            </div>
+          </article>
+
+          <article class="menu-item" data-category="main">
+            <img src="dish2.jpg"width = "300">
+            <div class="menu-body">
+              <h3>Grilled Salmon</h3>
+              <p>Seasonal veggies & lemon butter.</p>
+              <span class="price">₹420</span>
+            </div>
+          </article>
+
+          <article class="menu-item" data-category="dessert">
+            <img src="dish3.jpg" width = "300">
+            <div class="menu-body">
+              <h3>Tiramisu</h3>
+              <p>Rich espresso & mascarpone.</p>
+              <span class="price">₹200</span>
+            </div>
+          </article>
+
+          <!-- add more items as needed -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section alt">
+      <div class="container about-grid">
+        <div>
+          <h2>About Delizia</h2>
+          <p>At Delizia we believe food should be simple, honest and made with love. Our chefs source fresh local produce and craft seasonal menus.</p>
+          <ul>
+            <li>Farm-to-table ingredients</li>
+            <li>Signature flavors</li>
+            <li>Cozy ambiance</li>
+          </ul>
+        </div>
+        <div class="about-image">
+          <img src="Restaurant interior.jpg.jpg"width = "600">
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="section">
+      <div class="container">
+        <h2 class="section-title">What People Say</h2>
+        <div class="testimonials">
+          <blockquote>
+            "Amazing food and great service. The best place to celebrate!"
+            <cite>— Priya R.</cite>
+          </blockquote>
+          <blockquote>
+            "Fresh ingredients and delightful desserts. Highly recommended."
+            <cite>— Ahmed S.</cite>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section alt">
+      <div class="container contact-grid">
+        <div>
+          <h2>Reserve a Table</h2>
+          <form id="contact-form" class="contact-form">
+            <label>
+              Name
+              <input type="text" name="name" required />
+            </label>
+            <label>
+              Phone
+              <input type="tel" name="phone" required />
+            </label>
+            <label>
+              Date & Time
+              <input type="datetime-local" name="datetime" required />
+            </label>
+            <label>
+              Message
+              <textarea name="message" rows="4"></textarea>
+            </label>
+            <button type="submit" class="btn">Send Reservation</button>
+          </form>
+        </div>
+        <div class="contact-info">
+          <h3>Contact Info</h3>
+          <p>123 Food Street, Hyderabad</p>
+          <p>Phone: +91 98xxxxxxx</p>
+          <p>Open: Mon — Sun, 11:00 — 22:30</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Delizia. All rights reserved.</p>
+      <div class="socials">
+        <a href="#" aria-label="facebook">Fb</a>
+        <a href="#" aria-label="instagram">Ig</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
